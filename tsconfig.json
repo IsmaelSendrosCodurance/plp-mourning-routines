@@ -1,11 +1,40 @@
 {
-  "files": [],
+  "compilerOptions": {
+    "target": "es2018",
+    "module": "esnext",
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "lib": ["esnext", "esnext.asynciterable", "dom"],
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "rootDirs": ["src"],
+    "types": [
+      "node",
+      "jest",
+      "testing-library__jest-dom",
+    ]
+  },
+  "include": ["./src/**/*", "./src/**/*.vue"],
+  "exclude": ["node_modules"],
+  "files": ["src/vue-shim.d.ts"],
   "references": [
     {
       "path": "./tsconfig.node.json"
     },
     {
       "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.vitest.json"
     }
   ]
 }
