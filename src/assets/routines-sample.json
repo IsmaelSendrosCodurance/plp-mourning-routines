@@ -1,0 +1,24 @@
+{
+  "routines":[
+    {
+      "startAt": "08:00",
+      "endAt": "09:00",
+      "title": "Wake up"
+    },
+    {
+      "startAt": "09:00",
+      "endAt": "10:00",
+      "title": "Read"
+    },
+    {
+      "startAt": "10:00",
+      "endAt": "11:00",
+      "title": "Work"
+    },
+    {
+      "startAt": "11:00",
+      "endAt": "12:00",
+      "title": "Gym"
+    }
+  ]
+}

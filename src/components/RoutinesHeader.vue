@@ -1,7 +1,9 @@
-<script setup lang="ts">
-defineProps<{
-  msg: string
-}>()
+<script lang="ts">
+
+export default{
+  name: 'RoutinesHeader',
+  props: ['msg']
+}
 </script>
 
 <template>
