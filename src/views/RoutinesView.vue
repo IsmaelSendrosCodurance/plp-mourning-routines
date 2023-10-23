@@ -3,12 +3,11 @@
   <routines-table :routines="routines"/>
 </template>
 
-<script>
+<script lang="ts">
 import RoutinesTable from "@/components/RoutinesTable.vue";
 import RoutinesHeader from "@/components/RoutinesHeader.vue";
-import {computed, ref} from "vue";
-import { InMemoryRoutineManager} from "@/functions/in-memory-routine-manager";
-export default {
+import {computed, defineComponent, ref} from "vue";
+export default defineComponent( {
   name: "RoutinesView",
   components: {RoutinesHeader, RoutinesTable},
   setup: function () {
@@ -26,7 +25,7 @@ export default {
       routines
     }
   }
-}
+})
 </script>
 
 <style scoped>

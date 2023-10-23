@@ -1,16 +1,16 @@
-<script lang="ts">
-
-export default{
-  name: 'RoutinesHeader',
-  props: ['msg']
-}
-</script>
-
 <template>
   <div class="greetings">
     <h1 class="green">{{ msg }}</h1>
   </div>
 </template>
+
+<script lang="ts">
+import {defineComponent} from "vue";
+export default defineComponent({
+  name: 'RoutinesHeader',
+  props: ['msg']
+})
+</script>
 
 <style scoped>
 h1 {

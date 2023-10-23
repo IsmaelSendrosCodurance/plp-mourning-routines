@@ -72,7 +72,7 @@
     "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
     "testEnvironment": "jsdom",
     "setupFilesAfterEnv": [
-      "<rootDir>/src/__tests__/config/jest-dom-importer.ts"
+      "<rootDir>/config/jest-dom-importer.ts"
     ]
   }
 }

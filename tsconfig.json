@@ -12,11 +12,13 @@
     "esModuleInterop": true,
     "noImplicitAny": true,
     "skipLibCheck": true,
-    "baseUrl": ".",
+    "baseUrl": "./",
     "paths": {
       "@/*": ["src/*"]
     },
-    "rootDirs": ["src"],
+    "rootDirs": [
+      "tsconfig"
+    ],
     "types": [
       "node",
       "jest",
@@ -24,8 +26,12 @@
     ]
   },
   "include": ["./src/**/*", "./src/**/*.vue"],
-  "exclude": ["node_modules"],
-  "files": ["src/vue-shim.d.ts"],
+  "exclude": [
+    "./node_modules"
+  ],
+  "files": [
+    "src/vue-shim.d.ts"
+  ],
   "references": [
     {
       "path": "./tsconfig.node.json"
@@ -37,7 +43,7 @@
       "path": "./tsconfig.vitest.json"
     },
     {
-      "path": "src"
+      "path": "tsconfig"
     }
   ],
   "isolatedModules": true,
